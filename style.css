@@ -53,8 +53,19 @@
     isolation: isolate;
   }
 
+  /*  ************ RESET END ************ */
+  /*  ************ RESET END ************ */
+  /*  ************ RESET END ************ */
+  /*  ************ RESET END ************ */
+
+
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background-color: #3882F6;
+    border: none;
 }
 
 header, footer {
@@ -72,10 +83,29 @@ header a {
      color: #E5E7EB;
  }
 
+ #logo  {
+    font-size: 24px;
+    color: #F9FAF8;
+}
 
  .navbar {
     display: flex;
     justify-content: space-between;
+ }
+
+ .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+ }
+
+ .nav-list li {
+
  }
 
  
@@ -87,7 +117,7 @@ header h1 {
 
 .hero-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 80px;
 }
 
@@ -97,22 +127,65 @@ header h1 {
 }
 
 .hero-section-text {
-    padding-right: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
 }
 
-#logo  {
-    font-size: 24px;
-    color: #F9FAF8;
+.hero-section-text button {
+    width:  max-content;
+    margin-top: 10px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    color: white;
 }
+
+
 
 #portfolio h2 {
     font-size: 36px;
     font-weight: extra-bold;
     color: #1F2937;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.portfolio-flexbox {
+    display: flex;
+    gap: 4rem;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: center;
+}
+
+.portfolio-flexbox > p {
+    border: none;
+    margin-top: -40px;
+    text-align: center;
+}
+
+
+.portfolio-item {
+    border: 1px solid purple;
+    border-radius: 10px;
+    flex: 1;
+    min-height: 100px;
+    min-width: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 #quote_section {
     background-color: #E5E7EB;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
 #quote_section q {
@@ -122,10 +195,47 @@ header h1 {
     color: #1F2937;
 }
 
+#quote_section p {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bold;
+    align-self: flex-end;
+    padding-right: 50px;
+}
+
+#callto_section {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 #callto_flexbox {
     background-color: #3882F6;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    border-radius: 10px;
 }
 
 #callto_flexbox button {
-    background-color: #3882F6;
+    color: white;
+    width:  max-content;
+    margin-top: 10px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    border: 1px solid white;
 }
+
+footer {
+    min-height: 50px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
